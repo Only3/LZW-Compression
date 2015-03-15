@@ -10,8 +10,8 @@
         Private AppendChar(TABLE_SIZE) As Byte
         Private CodeValue(TABLE_SIZE) As Integer
         Private PrefixCode(TABLE_SIZE) As Integer
-        Public Input As IO.BinaryReader = Nothing
-        Public Output As IO.BinaryWriter = Nothing
+        Private Input As IO.BinaryReader = Nothing
+        Private Output As IO.BinaryWriter = Nothing
 
         Public Sub Compress(File As String)
             Input = New IO.BinaryReader(IO.File.Open(File, IO.FileMode.Open))
